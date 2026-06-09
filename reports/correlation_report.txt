@@ -1,0 +1,623 @@
+======================================================================
+      WIND TURBINE SENSOR CORRELATION REPORT     
+======================================================================
+
+--- COLLINEAR SENSOR PAIRS ---
+
+
+                          Feature_1                           Feature_2  Correlation
+                      Nacelle_angle                     Nacelle_angle_c     0.999999
+            Absolute_wind_direction           Absolute_wind_direction_c     0.999999
+                    Generator_speed                         Rotor_speed     0.999997
+                Generator_speed_min                     Rotor_speed_min     0.999993
+                Generator_speed_max                     Rotor_speed_max     0.999976
+                Generator_speed_std                     Rotor_speed_std     0.999915
+      Generator_converter_speed_std                 Generator_speed_std     0.999904
+      Generator_converter_speed_std                     Rotor_speed_std     0.999841
+          Generator_converter_speed                         Rotor_speed     0.999715
+          Generator_converter_speed                     Generator_speed     0.999715
+      Generator_converter_speed_min                 Generator_speed_min     0.999692
+      Generator_converter_speed_min                     Rotor_speed_min     0.999688
+      Generator_converter_speed_max                 Generator_speed_max     0.999670
+      Generator_converter_speed_max                     Rotor_speed_max     0.999653
+                Outdoor_temperature             Outdoor_temperature_min     0.999156
+            Outdoor_temperature_max             Outdoor_temperature_min     0.999103
+                Outdoor_temperature             Outdoor_temperature_max     0.999059
+          Rotor_bearing_temperature       Rotor_bearing_temperature_min     0.998428
+Generator_bearing_2_temperature_max Generator_bearing_2_temperature_min     0.998076
+   Gearbox_oil_sump_temperature_max    Gearbox_oil_sump_temperature_min     0.997876
+                    Hub_temperature                 Hub_temperature_min     0.997870
+                    Hub_temperature                 Hub_temperature_max     0.997714
+      Rotor_bearing_temperature_max       Rotor_bearing_temperature_min     0.997697
+                Hub_temperature_max                 Hub_temperature_min     0.997197
+      Gearbox_bearing_2_temperature   Gearbox_bearing_2_temperature_max     0.997066
+  Gearbox_bearing_2_temperature_max   Gearbox_bearing_2_temperature_min     0.996884
+    Generator_bearing_2_temperature Generator_bearing_2_temperature_min     0.996812
+          Rotor_bearing_temperature       Rotor_bearing_temperature_max     0.996274
+       Gearbox_oil_sump_temperature    Gearbox_oil_sump_temperature_min     0.996160
+      Gearbox_bearing_2_temperature   Gearbox_bearing_2_temperature_min     0.996151
+      Gearbox_bearing_1_temperature   Gearbox_bearing_1_temperature_max     0.996054
+       Gearbox_oil_sump_temperature    Gearbox_oil_sump_temperature_max     0.995964
+    Generator_bearing_2_temperature Generator_bearing_2_temperature_max     0.995958
+   Generator_stator_temperature_max    Generator_stator_temperature_min     0.995956
+       Generator_stator_temperature    Generator_stator_temperature_min     0.995650
+  Gearbox_bearing_1_temperature_max   Gearbox_bearing_1_temperature_min     0.995485
+       Generator_stator_temperature    Generator_stator_temperature_max     0.995281
+      Gearbox_bearing_1_temperature   Gearbox_bearing_1_temperature_min     0.995023
+    Generator_bearing_1_temperature Generator_bearing_1_temperature_min     0.993878
+Generator_bearing_1_temperature_max Generator_bearing_1_temperature_min     0.993563
+    Generator_bearing_1_temperature Generator_bearing_1_temperature_max     0.990343
+  Gearbox_bearing_1_temperature_max   Gearbox_bearing_2_temperature_max     0.985518
+          Gearbox_inlet_temperature       Gearbox_inlet_temperature_max     0.985164
+      Gearbox_bearing_1_temperature       Gearbox_bearing_2_temperature     0.984167
+          Gearbox_inlet_temperature       Gearbox_inlet_temperature_min     0.983634
+  Gearbox_bearing_1_temperature_max       Gearbox_bearing_2_temperature     0.983500
+  Gearbox_bearing_1_temperature_max   Gearbox_bearing_2_temperature_min     0.982884
+                Nacelle_temperature             Nacelle_temperature_min     0.982662
+  Gearbox_bearing_1_temperature_min   Gearbox_bearing_2_temperature_min     0.982279
+      Gearbox_bearing_1_temperature   Gearbox_bearing_2_temperature_max     0.980319
+      Gearbox_bearing_1_temperature   Gearbox_bearing_2_temperature_min     0.979586
+  Gearbox_bearing_1_temperature_min       Gearbox_bearing_2_temperature     0.979138
+  Gearbox_bearing_1_temperature_min   Gearbox_bearing_2_temperature_max     0.979078
+                   Grid_voltage_max                    Grid_voltage_min     0.978350
+                        Pitch_angle                     Pitch_angle_min     0.975437
+                        Pitch_angle                     Pitch_angle_max     0.974805
+                       Grid_voltage                    Grid_voltage_min     0.974031
+      Gearbox_inlet_temperature_max       Gearbox_inlet_temperature_min     0.973312
+                Nacelle_temperature             Nacelle_temperature_max     0.971989
+            Nacelle_temperature_max             Nacelle_temperature_min     0.971350
+                    Generator_speed                     Rotor_speed_max     0.970474
+                    Generator_speed                 Generator_speed_max     0.970431
+          Generator_converter_speed       Generator_converter_speed_max     0.970427
+                        Rotor_speed                     Rotor_speed_max     0.970422
+                Generator_speed_max                         Rotor_speed     0.970375
+      Generator_converter_speed_max                     Generator_speed     0.970250
+          Generator_converter_speed                     Rotor_speed_max     0.970214
+      Generator_converter_speed_max                         Rotor_speed     0.970198
+          Generator_converter_speed                 Generator_speed_max     0.970169
+                       Grid_voltage                    Grid_voltage_max     0.968568
+                Generator_speed_min                         Rotor_speed     0.964507
+          Generator_converter_speed       Generator_converter_speed_min     0.964494
+                    Generator_speed                 Generator_speed_min     0.964466
+                        Rotor_speed                     Rotor_speed_min     0.964454
+                    Generator_speed                     Rotor_speed_min     0.964409
+          Generator_converter_speed                 Generator_speed_min     0.964326
+          Generator_converter_speed                     Rotor_speed_min     0.964270
+      Generator_converter_speed_min                         Rotor_speed     0.964187
+      Generator_converter_speed_min                     Generator_speed     0.964145
+                  Nacelle_angle_max                   Nacelle_angle_min     0.955422
+                 Grid_frequency_std                    Grid_voltage_std     0.952994
+      Gearbox_inlet_temperature_max        Gearbox_oil_sump_temperature     0.948494
+      Gearbox_inlet_temperature_max    Gearbox_oil_sump_temperature_min     0.947727
+      Gearbox_inlet_temperature_max    Gearbox_oil_sump_temperature_max     0.946552
+                    Hub_temperature             Outdoor_temperature_min     0.940605
+                Hub_temperature_max             Outdoor_temperature_min     0.939910
+                Hub_temperature_min             Outdoor_temperature_min     0.939679
+                    Hub_temperature                 Outdoor_temperature     0.938311
+                Hub_temperature_max                 Outdoor_temperature     0.936399
+                    Hub_temperature             Outdoor_temperature_max     0.936287
+                Hub_temperature_min                 Outdoor_temperature     0.936112
+          Gearbox_inlet_temperature        Gearbox_oil_sump_temperature     0.935963
+                Hub_temperature_max             Outdoor_temperature_max     0.935675
+                Hub_temperature_min             Outdoor_temperature_max     0.935281
+          Gearbox_inlet_temperature    Gearbox_oil_sump_temperature_min     0.930027
+          Gearbox_inlet_temperature    Gearbox_oil_sump_temperature_max     0.924990
+  Gearbox_bearing_2_temperature_max    Gearbox_oil_sump_temperature_max     0.924364
+                    Pitch_angle_max                     Pitch_angle_min     0.923752
+  Gearbox_bearing_2_temperature_min    Gearbox_oil_sump_temperature_max     0.922128
+                Generator_speed_min                     Rotor_speed_max     0.921172
+      Generator_converter_speed_max       Generator_converter_speed_min     0.921116
+                Generator_speed_max                 Generator_speed_min     0.921097
+      Generator_converter_speed_max                 Generator_speed_min     0.921087
+                    Rotor_speed_max                     Rotor_speed_min     0.921063
+                Generator_speed_max                     Rotor_speed_min     0.920987
+      Generator_converter_speed_max                     Rotor_speed_min     0.920978
+      Generator_converter_speed_min                     Rotor_speed_max     0.920883
+      Generator_converter_speed_min                 Generator_speed_max     0.920807
+      Gearbox_bearing_2_temperature        Gearbox_oil_sump_temperature     0.920393
+      Gearbox_bearing_2_temperature    Gearbox_oil_sump_temperature_max     0.919839
+  Gearbox_bearing_2_temperature_max        Gearbox_oil_sump_temperature     0.919750
+Generator_bearing_1_temperature_max Generator_bearing_2_temperature_max     0.919352
+  Gearbox_bearing_2_temperature_min        Gearbox_oil_sump_temperature     0.918256
+      Gearbox_inlet_temperature_min    Gearbox_oil_sump_temperature_min     0.917374
+   Gearbox_oil_sump_temperature_min    Generator_stator_temperature_max     0.917057
+    Generator_bearing_1_temperature     Generator_bearing_2_temperature     0.917044
+Generator_bearing_1_temperature_min Generator_bearing_2_temperature_max     0.916942
+  Gearbox_bearing_2_temperature_min    Gearbox_oil_sump_temperature_min     0.916062
+  Gearbox_bearing_2_temperature_max    Gearbox_oil_sump_temperature_min     0.916049
+      Gearbox_inlet_temperature_min        Gearbox_oil_sump_temperature     0.915073
+Generator_bearing_1_temperature_min Generator_bearing_2_temperature_min     0.914931
+Generator_bearing_1_temperature_min     Generator_bearing_2_temperature     0.913974
+       Gearbox_oil_sump_temperature    Generator_stator_temperature_max     0.913946
+   Gearbox_oil_sump_temperature_max    Generator_stator_temperature_max     0.913779
+    Generator_bearing_1_temperature Generator_bearing_2_temperature_max     0.913359
+       Gearbox_oil_sump_temperature        Generator_stator_temperature     0.913163
+   Gearbox_oil_sump_temperature_min        Generator_stator_temperature     0.912640
+      Gearbox_bearing_2_temperature    Gearbox_oil_sump_temperature_min     0.912477
+Generator_bearing_1_temperature_max     Generator_bearing_2_temperature     0.911836
+Generator_bearing_1_temperature_max Generator_bearing_2_temperature_min     0.911782
+   Gearbox_oil_sump_temperature_min    Generator_stator_temperature_min     0.911102
+    Generator_bearing_1_temperature Generator_bearing_2_temperature_min     0.910311
+   Gearbox_oil_sump_temperature_max        Generator_stator_temperature     0.908095
+      Gearbox_inlet_temperature_min    Gearbox_oil_sump_temperature_max     0.907859
+       Gearbox_oil_sump_temperature    Generator_stator_temperature_min     0.906537
+   Gearbox_oil_sump_temperature_max    Generator_stator_temperature_min     0.905919
+  Gearbox_bearing_2_temperature_min    Generator_stator_temperature_max     0.905575
+  Gearbox_bearing_1_temperature_min    Generator_stator_temperature_max     0.905162
+  Gearbox_bearing_2_temperature_max    Generator_stator_temperature_max     0.904817
+  Gearbox_bearing_1_temperature_max    Generator_stator_temperature_max     0.902988
+  Gearbox_bearing_1_temperature_max    Gearbox_oil_sump_temperature_max     0.902595
+      Gearbox_bearing_2_temperature    Generator_stator_temperature_max     0.902107
+  Gearbox_bearing_1_temperature_min    Gearbox_oil_sump_temperature_max     0.900760
+      Gearbox_bearing_1_temperature        Gearbox_oil_sump_temperature     0.900301
+  Gearbox_bearing_1_temperature_min        Generator_stator_temperature     0.899868
+  Gearbox_bearing_1_temperature_min        Gearbox_oil_sump_temperature     0.899551
+  Gearbox_bearing_1_temperature_max        Gearbox_oil_sump_temperature     0.899491
+      Gearbox_bearing_1_temperature    Generator_stator_temperature_max     0.899321
+  Gearbox_bearing_1_temperature_min    Gearbox_oil_sump_temperature_min     0.898422
+  Gearbox_bearing_2_temperature_min        Generator_stator_temperature     0.897432
+      Gearbox_bearing_1_temperature    Gearbox_oil_sump_temperature_max     0.897010
+      Gearbox_bearing_2_temperature        Generator_stator_temperature     0.896585
+      Gearbox_bearing_1_temperature        Generator_stator_temperature     0.896498
+  Gearbox_bearing_1_temperature_max        Generator_stator_temperature     0.896335
+  Gearbox_bearing_1_temperature_max    Gearbox_oil_sump_temperature_min     0.896243
+  Gearbox_bearing_2_temperature_max        Generator_stator_temperature     0.895903
+      Gearbox_bearing_1_temperature    Gearbox_oil_sump_temperature_min     0.892479
+  Gearbox_bearing_1_temperature_min    Generator_stator_temperature_min     0.889885
+  Gearbox_bearing_2_temperature_min    Generator_stator_temperature_min     0.888717
+  Gearbox_bearing_2_temperature_max    Generator_stator_temperature_min     0.885989
+  Gearbox_bearing_1_temperature_max    Generator_stator_temperature_min     0.885276
+      Gearbox_bearing_2_temperature    Generator_stator_temperature_min     0.883530
+      Gearbox_bearing_1_temperature    Generator_stator_temperature_min     0.882014
+      Gearbox_inlet_temperature_max Generator_bearing_1_temperature_max     0.881738
+   Gearbox_oil_sump_temperature_min Generator_bearing_1_temperature_max     0.874333
+      Gearbox_inlet_temperature_max     Generator_bearing_1_temperature     0.873946
+          Gearbox_inlet_temperature Generator_bearing_1_temperature_max     0.871078
+       Gearbox_oil_sump_temperature Generator_bearing_1_temperature_max     0.870074
+          Gearbox_inlet_temperature     Generator_bearing_1_temperature     0.870022
+   Gearbox_oil_sump_temperature_max Generator_bearing_1_temperature_max     0.869257
+                 Grid_frequency_max                  Grid_frequency_min     0.868419
+Generator_bearing_2_temperature_max    Generator_stator_temperature_min     0.867076
+Generator_bearing_1_temperature_max    Generator_stator_temperature_max     0.864026
+      Gearbox_inlet_temperature_max Generator_bearing_1_temperature_min     0.863877
+      Gearbox_inlet_temperature_min Generator_bearing_1_temperature_max     0.863336
+Generator_bearing_2_temperature_max    Generator_stator_temperature_max     0.863153
+Generator_bearing_2_temperature_max        Generator_stator_temperature     0.862938
+       Gearbox_oil_sump_temperature     Generator_bearing_1_temperature     0.862821
+   Gearbox_oil_sump_temperature_min     Generator_bearing_1_temperature     0.862613
+Generator_bearing_1_temperature_max    Generator_stator_temperature_min     0.862213
+      Gearbox_inlet_temperature_min     Generator_bearing_1_temperature     0.861802
+    Generator_bearing_2_temperature        Generator_stator_temperature     0.861782
+Generator_bearing_1_temperature_max        Generator_stator_temperature     0.861466
+    Generator_bearing_2_temperature    Generator_stator_temperature_min     0.860717
+Generator_bearing_2_temperature_min    Generator_stator_temperature_min     0.860685
+   Gearbox_oil_sump_temperature_min Generator_bearing_2_temperature_max     0.858742
+      Gearbox_bearing_2_temperature                     Rotor_speed_max     0.858376
+      Gearbox_bearing_2_temperature                 Generator_speed_max     0.857839
+      Gearbox_bearing_2_temperature       Generator_converter_speed_max     0.857838
+  Gearbox_bearing_2_temperature_max                     Rotor_speed_max     0.857589
+  Gearbox_bearing_2_temperature_max                 Generator_speed_max     0.857056
+  Gearbox_bearing_2_temperature_max       Generator_converter_speed_max     0.857028
+   Gearbox_oil_sump_temperature_max     Generator_bearing_1_temperature     0.855924
+Generator_bearing_2_temperature_min        Generator_stator_temperature     0.855681
+    Generator_bearing_1_temperature        Generator_stator_temperature     0.855660
+   Gearbox_oil_sump_temperature_min Generator_bearing_1_temperature_min     0.855647
+          Gearbox_inlet_temperature Generator_bearing_1_temperature_min     0.855633
+    Generator_bearing_2_temperature    Generator_stator_temperature_max     0.854392
+      Gearbox_inlet_temperature_max Generator_bearing_2_temperature_max     0.853318
+Generator_bearing_2_temperature_min    Generator_stator_temperature_max     0.853132
+       Gearbox_oil_sump_temperature Generator_bearing_2_temperature_max     0.852058
+   Gearbox_oil_sump_temperature_min     Generator_bearing_2_temperature     0.851730
+      Gearbox_inlet_temperature_min Generator_bearing_1_temperature_min     0.851238
+      Gearbox_bearing_2_temperature                         Rotor_speed     0.850364
+      Gearbox_bearing_2_temperature                     Generator_speed     0.850327
+       Gearbox_oil_sump_temperature Generator_bearing_1_temperature_min     0.849953
+      Gearbox_bearing_2_temperature           Generator_converter_speed     0.849933
+   Gearbox_oil_sump_temperature_min Generator_bearing_2_temperature_min     0.849722
+          Gearbox_inlet_temperature Generator_bearing_2_temperature_max     0.849393
+    Generator_bearing_1_temperature    Generator_stator_temperature_min     0.849375
+       Gearbox_oil_sump_temperature     Generator_bearing_2_temperature     0.849323
+   Gearbox_oil_sump_temperature_max Generator_bearing_2_temperature_max     0.848728
+          Gearbox_inlet_temperature     Generator_bearing_2_temperature     0.848528
+   Gearbox_oil_sump_temperature_max Generator_bearing_1_temperature_min     0.848406
+          Absolute_wind_direction_c                       Nacelle_angle     0.848165
+            Absolute_wind_direction                       Nacelle_angle     0.848164
+          Absolute_wind_direction_c                     Nacelle_angle_c     0.848163
+            Absolute_wind_direction                     Nacelle_angle_c     0.848160
+Generator_bearing_1_temperature_min    Generator_stator_temperature_min     0.847823
+  Gearbox_bearing_1_temperature_max                     Rotor_speed_max     0.847727
+      Gearbox_inlet_temperature_max     Generator_bearing_2_temperature     0.847586
+  Gearbox_bearing_1_temperature_max       Generator_converter_speed_max     0.847288
+  Gearbox_bearing_1_temperature_max                 Generator_speed_max     0.847214
+    Generator_bearing_1_temperature    Generator_stator_temperature_max     0.846380
+      Gearbox_inlet_temperature_min Generator_bearing_2_temperature_max     0.846302
+  Gearbox_bearing_2_temperature_min                     Rotor_speed_max     0.846221
+  Gearbox_bearing_2_temperature_min       Generator_converter_speed_max     0.845743
+  Gearbox_bearing_2_temperature_min                 Generator_speed_max     0.845670
+Generator_bearing_1_temperature_min        Generator_stator_temperature     0.845627
+      Gearbox_bearing_1_temperature                     Rotor_speed_max     0.844726
+      Gearbox_bearing_1_temperature       Generator_converter_speed_max     0.844329
+      Gearbox_bearing_1_temperature                 Generator_speed_max     0.844221
+      Gearbox_inlet_temperature_min     Generator_bearing_2_temperature     0.843583
+  Gearbox_bearing_2_temperature_max                         Rotor_speed     0.843326
+  Gearbox_bearing_2_temperature_max                     Generator_speed     0.843304
+  Gearbox_bearing_2_temperature_max           Generator_converter_speed     0.842909
+Generator_bearing_1_temperature_min    Generator_stator_temperature_max     0.842616
+       Gearbox_oil_sump_temperature Generator_bearing_2_temperature_min     0.842336
+      Gearbox_inlet_temperature_max Generator_bearing_2_temperature_min     0.840928
+      Gearbox_bearing_1_temperature                         Pitch_angle    -0.840924
+   Gearbox_oil_sump_temperature_max     Generator_bearing_2_temperature     0.840845
+  Gearbox_bearing_2_temperature_min                         Rotor_speed     0.838759
+   Gearbox_oil_sump_temperature_max Generator_bearing_2_temperature_min     0.838716
+  Gearbox_bearing_2_temperature_min                     Generator_speed     0.838707
+  Gearbox_bearing_2_temperature_min           Generator_converter_speed     0.838362
+          Gearbox_inlet_temperature Generator_bearing_2_temperature_min     0.837720
+      Gearbox_inlet_temperature_max    Generator_stator_temperature_max     0.837453
+  Gearbox_bearing_1_temperature_max                         Pitch_angle    -0.835897
+      Gearbox_inlet_temperature_min Generator_bearing_2_temperature_min     0.835831
+      Gearbox_bearing_1_temperature                     Pitch_angle_min    -0.835781
+      Gearbox_bearing_1_temperature                     Generator_speed     0.835328
+      Gearbox_bearing_1_temperature                         Rotor_speed     0.835304
+      Gearbox_bearing_1_temperature           Generator_converter_speed     0.835016
+      Gearbox_inlet_temperature_max        Generator_stator_temperature     0.832923
+                    Generator_speed                         Pitch_angle    -0.832601
+  Gearbox_bearing_1_temperature_max                     Pitch_angle_min    -0.832324
+                        Pitch_angle                         Rotor_speed    -0.832067
+  Gearbox_bearing_1_temperature_max                     Generator_speed     0.831976
+  Gearbox_bearing_1_temperature_max                         Rotor_speed     0.831961
+          Generator_converter_speed                         Pitch_angle    -0.831801
+  Gearbox_bearing_1_temperature_max           Generator_converter_speed     0.831666
+                        Pitch_angle                     Rotor_speed_max    -0.830562
+                Generator_speed_max                         Pitch_angle    -0.830256
+      Generator_converter_speed_max                         Pitch_angle    -0.830089
+  Gearbox_bearing_1_temperature_min                         Pitch_angle    -0.829892
+  Gearbox_bearing_1_temperature_min                     Rotor_speed_max     0.827950
+  Gearbox_bearing_1_temperature_min       Generator_converter_speed_max     0.827638
+  Gearbox_bearing_1_temperature_min                 Generator_speed_max     0.827436
+      Gearbox_inlet_temperature_max    Generator_stator_temperature_min     0.826752
+    Generator_bearing_2_temperature             Nacelle_temperature_max     0.825849
+  Gearbox_bearing_1_temperature_min                     Pitch_angle_min    -0.824758
+      Gearbox_bearing_2_temperature                         Pitch_angle    -0.823903
+Generator_bearing_2_temperature_min             Nacelle_temperature_max     0.823632
+  Gearbox_bearing_2_temperature_max       Gearbox_inlet_temperature_max     0.821801
+  Gearbox_bearing_2_temperature_max                         Pitch_angle    -0.821605
+                    Pitch_angle_min                     Rotor_speed_max    -0.821334
+Generator_bearing_2_temperature_max       Rotor_bearing_temperature_min     0.821221
+      Gearbox_bearing_2_temperature                 Generator_speed_min     0.821156
+                Generator_speed_max                     Pitch_angle_min    -0.821086
+      Generator_converter_speed_max                     Pitch_angle_min    -0.820969
+      Gearbox_bearing_2_temperature                     Rotor_speed_min     0.820894
+      Gearbox_bearing_2_temperature       Generator_converter_speed_min     0.820467
+    Generator_bearing_2_temperature           Rotor_bearing_temperature     0.820097
+Generator_bearing_2_temperature_max       Rotor_bearing_temperature_max     0.819992
+          Gearbox_inlet_temperature    Generator_stator_temperature_max     0.819929
+Generator_bearing_2_temperature_min       Rotor_bearing_temperature_min     0.819833
+          Gearbox_inlet_temperature        Generator_stator_temperature     0.819330
+    Generator_bearing_2_temperature       Rotor_bearing_temperature_min     0.819221
+  Gearbox_bearing_2_temperature_min                 Generator_speed_min     0.819020
+Generator_bearing_2_temperature_max           Rotor_bearing_temperature     0.818845
+  Gearbox_bearing_2_temperature_min                     Rotor_speed_min     0.818793
+  Gearbox_bearing_1_temperature_min                     Generator_speed     0.818709
+  Gearbox_bearing_1_temperature_min                         Rotor_speed     0.818687
+  Gearbox_bearing_1_temperature_min           Generator_converter_speed     0.818465
+  Gearbox_bearing_2_temperature_min       Generator_converter_speed_min     0.818352
+Generator_bearing_2_temperature_min       Rotor_bearing_temperature_max     0.818230
+      Gearbox_bearing_2_temperature       Gearbox_inlet_temperature_max     0.817820
+                     Grid_frequency                  Grid_frequency_min     0.817807
+    Generator_bearing_2_temperature       Rotor_bearing_temperature_max     0.817630
+Generator_bearing_2_temperature_min           Rotor_bearing_temperature     0.817340
+                    Generator_speed                     Pitch_angle_max    -0.816408
+Generator_bearing_1_temperature_min             Nacelle_temperature_max     0.816326
+                    Pitch_angle_max                         Rotor_speed    -0.815877
+    Generator_bearing_1_temperature             Nacelle_temperature_max     0.815764
+          Generator_converter_speed                     Pitch_angle_max    -0.815759
+Generator_bearing_2_temperature_max             Nacelle_temperature_max     0.815533
+      Gearbox_bearing_2_temperature                     Pitch_angle_min    -0.815115
+  Gearbox_bearing_2_temperature_min       Gearbox_inlet_temperature_max     0.814718
+      Gearbox_bearing_1_temperature                     Pitch_angle_max    -0.814662
+  Gearbox_bearing_2_temperature_max                 Generator_speed_min     0.814271
+  Gearbox_bearing_2_temperature_max                     Rotor_speed_min     0.813994
+  Gearbox_bearing_2_temperature_max                     Pitch_angle_min    -0.813796
+  Gearbox_bearing_2_temperature_max       Generator_converter_speed_min     0.813592
+  Gearbox_bearing_2_temperature_min                         Pitch_angle    -0.813494
+  Gearbox_bearing_1_temperature_max       Gearbox_inlet_temperature_max     0.812268
+                      Nacelle_angle                   Nacelle_angle_min     0.811898
+                    Nacelle_angle_c                   Nacelle_angle_min     0.811885
+          Gearbox_inlet_temperature    Generator_stator_temperature_min     0.810296
+      Gearbox_bearing_1_temperature       Gearbox_inlet_temperature_max     0.809917
+  Gearbox_bearing_1_temperature_min       Gearbox_inlet_temperature_max     0.809808
+  Gearbox_bearing_1_temperature_max                     Pitch_angle_max    -0.809316
+Generator_bearing_1_temperature_std Generator_bearing_2_temperature_std     0.808512
+      Gearbox_bearing_1_temperature                 Generator_speed_min     0.807825
+      Gearbox_bearing_1_temperature                     Rotor_speed_min     0.807491
+      Gearbox_bearing_1_temperature       Generator_converter_speed_min     0.807187
+                      Nacelle_angle                   Nacelle_angle_max     0.806538
+                    Nacelle_angle_c                   Nacelle_angle_max     0.806524
+  Gearbox_bearing_1_temperature_min                     Pitch_angle_max    -0.805643
+  Gearbox_bearing_2_temperature_min                     Pitch_angle_min    -0.805120
+  Gearbox_bearing_1_temperature_max                 Generator_speed_min     0.804653
+  Gearbox_bearing_1_temperature_max                     Rotor_speed_min     0.804333
+  Gearbox_bearing_1_temperature_max       Generator_converter_speed_min     0.804026
+      Gearbox_bearing_2_temperature                     Pitch_angle_max    -0.803391
+                    Generator_speed                     Pitch_angle_min    -0.802504
+                    Pitch_angle_max                     Rotor_speed_max    -0.802325
+                    Pitch_angle_min                         Rotor_speed    -0.801996
+                Generator_speed_max                     Pitch_angle_max    -0.801983
+  Gearbox_bearing_1_temperature_min                 Generator_speed_min     0.801965
+      Generator_converter_speed_max                     Pitch_angle_max    -0.801959
+          Generator_converter_speed                     Pitch_angle_min    -0.801841
+  Gearbox_bearing_1_temperature_min                     Rotor_speed_min     0.801646
+  Gearbox_bearing_1_temperature_min       Generator_converter_speed_min     0.801355
+  Gearbox_bearing_1_temperature_std   Gearbox_bearing_2_temperature_std     0.800830
+  Gearbox_bearing_2_temperature_max                     Pitch_angle_max    -0.800761
+      Gearbox_inlet_temperature_min    Generator_stator_temperature_max     0.800401
+      Gearbox_inlet_temperature_min        Generator_stator_temperature     0.799643
+                Generator_speed_min                     Pitch_angle_max    -0.797975
+   Gearbox_oil_sump_temperature_min       Rotor_bearing_temperature_min     0.797126
+      Generator_converter_speed_min                     Pitch_angle_max    -0.796932
+                    Pitch_angle_max                     Rotor_speed_min    -0.796870
+   Gearbox_oil_sump_temperature_min       Rotor_bearing_temperature_max     0.795967
+       Gearbox_oil_sump_temperature           Rotor_bearing_temperature     0.795925
+                Generator_speed_min                         Pitch_angle    -0.795158
+       Gearbox_oil_sump_temperature       Rotor_bearing_temperature_min     0.794697
+   Gearbox_oil_sump_temperature_min           Rotor_bearing_temperature     0.794459
+                        Pitch_angle                     Rotor_speed_min    -0.794126
+   Gearbox_oil_sump_temperature_max       Rotor_bearing_temperature_min     0.794094
+      Generator_converter_speed_min                         Pitch_angle    -0.794003
+      Gearbox_bearing_2_temperature           Gearbox_inlet_temperature     0.793942
+  Gearbox_bearing_2_temperature_min                     Pitch_angle_max    -0.793729
+       Gearbox_oil_sump_temperature       Rotor_bearing_temperature_max     0.793608
+    Generator_bearing_2_temperature                 Nacelle_temperature     0.793464
+   Gearbox_oil_sump_temperature_max       Rotor_bearing_temperature_max     0.793241
+  Gearbox_bearing_2_temperature_max           Gearbox_inlet_temperature     0.793086
+      Gearbox_inlet_temperature_min    Generator_stator_temperature_min     0.792898
+      Gearbox_bearing_1_temperature           Gearbox_inlet_temperature     0.791776
+   Gearbox_oil_sump_temperature_max           Rotor_bearing_temperature     0.791511
+Generator_bearing_1_temperature_max             Nacelle_temperature_max     0.791482
+  Gearbox_bearing_2_temperature_min           Gearbox_inlet_temperature     0.786943
+  Gearbox_bearing_1_temperature_min           Gearbox_inlet_temperature     0.786873
+  Gearbox_bearing_1_temperature_max           Gearbox_inlet_temperature     0.784991
+Generator_bearing_2_temperature_min                 Nacelle_temperature     0.783947
+    Generator_bearing_1_temperature                 Nacelle_temperature     0.775105
+    Generator_bearing_2_temperature             Nacelle_temperature_min     0.772138
+Generator_bearing_2_temperature_max                 Nacelle_temperature     0.771705
+   Generator_stator_temperature_max                     Pitch_angle_min    -0.770905
+Generator_bearing_2_temperature_min             Nacelle_temperature_min     0.768955
+                Hub_temperature_min             Nacelle_temperature_max     0.767835
+   Generator_stator_temperature_max                         Pitch_angle    -0.767047
+                    Hub_temperature             Nacelle_temperature_max     0.764962
+  Gearbox_bearing_1_temperature_min       Gearbox_inlet_temperature_min     0.764874
+                Hub_temperature_max             Nacelle_temperature_max     0.764681
+Generator_bearing_1_temperature_min                 Nacelle_temperature     0.764566
+                Hub_temperature_min                 Nacelle_temperature     0.764214
+                    Hub_temperature                 Nacelle_temperature     0.763954
+       Generator_stator_temperature                     Pitch_angle_min    -0.761408
+                Hub_temperature_max                 Nacelle_temperature     0.761329
+  Gearbox_bearing_2_temperature_max       Gearbox_inlet_temperature_min     0.761254
+                Nacelle_temperature             Outdoor_temperature_min     0.761071
+                Nacelle_temperature                 Outdoor_temperature     0.760776
+      Gearbox_bearing_1_temperature       Gearbox_inlet_temperature_min     0.760681
+                Hub_temperature_min             Nacelle_temperature_min     0.760656
+      Gearbox_bearing_2_temperature       Gearbox_inlet_temperature_min     0.759965
+                Nacelle_temperature             Outdoor_temperature_max     0.759645
+            Nacelle_temperature_max             Outdoor_temperature_min     0.759620
+            Nacelle_temperature_min             Outdoor_temperature_min     0.759482
+                    Hub_temperature             Nacelle_temperature_min     0.758465
+            Nacelle_temperature_min             Outdoor_temperature_max     0.758350
+                Hub_temperature_max             Nacelle_temperature_min     0.758286
+            Nacelle_temperature_max             Outdoor_temperature_max     0.758188
+    Generator_bearing_1_temperature             Nacelle_temperature_min     0.758173
+  Gearbox_bearing_2_temperature_min       Gearbox_inlet_temperature_min     0.757883
+            Nacelle_temperature_min                 Outdoor_temperature     0.757589
+Generator_bearing_1_temperature_min             Nacelle_temperature_min     0.757487
+  Gearbox_bearing_1_temperature_max       Gearbox_inlet_temperature_min     0.757209
+            Nacelle_temperature_max                 Outdoor_temperature     0.757176
+                Generator_speed_min                     Pitch_angle_min    -0.756581
+       Generator_stator_temperature                         Pitch_angle    -0.756551
+   Generator_stator_temperature_max       Rotor_bearing_temperature_min     0.756059
+                    Pitch_angle_min                     Rotor_speed_min    -0.755637
+   Generator_stator_temperature_max       Rotor_bearing_temperature_max     0.755591
+      Generator_converter_speed_min                     Pitch_angle_min    -0.755581
+Generator_bearing_2_temperature_max             Nacelle_temperature_min     0.754547
+   Generator_stator_temperature_max           Rotor_bearing_temperature     0.754046
+  Gearbox_bearing_2_temperature_max Generator_bearing_1_temperature_max     0.754005
+Generator_bearing_1_temperature_std    Generator_stator_temperature_std     0.753929
+       Generator_stator_temperature           Rotor_bearing_temperature     0.752632
+       Generator_stator_temperature       Rotor_bearing_temperature_min     0.751662
+       Generator_stator_temperature       Rotor_bearing_temperature_max     0.750929
+   Generator_stator_temperature_min       Rotor_bearing_temperature_min     0.748592
+  Gearbox_bearing_2_temperature_min Generator_bearing_1_temperature_max     0.748264
+      Gearbox_bearing_2_temperature Generator_bearing_1_temperature_max     0.748228
+   Generator_stator_temperature_min       Rotor_bearing_temperature_max     0.747865
+  Gearbox_bearing_1_temperature_max Generator_bearing_1_temperature_max     0.746410
+   Generator_stator_temperature_min           Rotor_bearing_temperature     0.746172
+  Gearbox_bearing_1_temperature_min Generator_bearing_1_temperature_max     0.745985
+       Gearbox_oil_sump_temperature                         Pitch_angle    -0.743852
+       Gearbox_oil_sump_temperature                     Pitch_angle_min    -0.742504
+      Gearbox_bearing_1_temperature Generator_bearing_1_temperature_max     0.740986
+   Gearbox_oil_sump_temperature_max                         Pitch_angle    -0.740410
+                    Rotor_speed_min                              TARGET     0.740135
+   Generator_stator_temperature_min                     Pitch_angle_min    -0.739333
+                Generator_speed_min                              TARGET     0.738900
+      Generator_converter_speed_min                              TARGET     0.738866
+   Gearbox_oil_sump_temperature_max                     Pitch_angle_min    -0.738859
+                        Rotor_speed                              TARGET     0.738555
+   Generator_stator_temperature_max                     Pitch_angle_max    -0.738479
+   Gearbox_oil_sump_temperature_min                         Pitch_angle    -0.737735
+                    Generator_speed                              TARGET     0.737672
+          Generator_converter_speed                              TARGET     0.737583
+   Gearbox_oil_sump_temperature_min                     Pitch_angle_min    -0.736969
+Generator_bearing_1_temperature_max       Rotor_bearing_temperature_min     0.736595
+      Gearbox_inlet_temperature_max       Rotor_bearing_temperature_min     0.736246
+Generator_bearing_1_temperature_max       Rotor_bearing_temperature_max     0.736017
+      Gearbox_inlet_temperature_max       Rotor_bearing_temperature_max     0.735459
+  Gearbox_bearing_2_temperature_max     Generator_bearing_1_temperature     0.735045
+      Gearbox_inlet_temperature_max           Rotor_bearing_temperature     0.734286
+Generator_bearing_1_temperature_max           Rotor_bearing_temperature     0.734037
+   Generator_stator_temperature_min                         Pitch_angle    -0.733602
+      Gearbox_bearing_2_temperature     Generator_bearing_1_temperature     0.732927
+Generator_bearing_1_temperature_max                 Nacelle_temperature     0.731283
+  Gearbox_bearing_1_temperature_min     Generator_bearing_1_temperature     0.730892
+  Gearbox_bearing_2_temperature_min       Rotor_bearing_temperature_min     0.730815
+  Gearbox_bearing_2_temperature_min           Rotor_bearing_temperature     0.729997
+    Generator_bearing_1_temperature           Rotor_bearing_temperature     0.729985
+      Gearbox_bearing_2_temperature           Rotor_bearing_temperature     0.729914
+  Gearbox_bearing_2_temperature_min       Rotor_bearing_temperature_max     0.729888
+  Gearbox_bearing_2_temperature_max       Rotor_bearing_temperature_min     0.729871
+  Gearbox_bearing_1_temperature_max     Generator_bearing_1_temperature     0.729830
+  Gearbox_bearing_2_temperature_min     Generator_bearing_1_temperature     0.729653
+  Gearbox_bearing_2_temperature_max           Rotor_bearing_temperature     0.729274
+  Gearbox_bearing_2_temperature_max       Rotor_bearing_temperature_max     0.729256
+      Gearbox_bearing_1_temperature     Generator_bearing_1_temperature     0.729147
+    Generator_bearing_1_temperature       Rotor_bearing_temperature_min     0.728963
+    Generator_bearing_1_temperature       Rotor_bearing_temperature_max     0.727909
+      Gearbox_bearing_2_temperature       Rotor_bearing_temperature_min     0.727897
+       Generator_stator_temperature                     Pitch_angle_max    -0.727505
+      Gearbox_bearing_2_temperature       Rotor_bearing_temperature_max     0.727085
+      Gearbox_inlet_temperature_max                         Pitch_angle    -0.727061
+          Gearbox_inlet_temperature           Rotor_bearing_temperature     0.726956
+                Hub_temperature_min       Rotor_bearing_temperature_min     0.726489
+          Gearbox_inlet_temperature       Rotor_bearing_temperature_min     0.726218
+      Gearbox_inlet_temperature_max                     Pitch_angle_min    -0.726151
+          Gearbox_inlet_temperature       Rotor_bearing_temperature_max     0.725090
+       Gearbox_oil_sump_temperature                     Pitch_angle_max    -0.724917
+                Hub_temperature_min           Rotor_bearing_temperature     0.724872
+Generator_bearing_1_temperature_min       Rotor_bearing_temperature_min     0.723831
+      Gearbox_inlet_temperature_min             Nacelle_temperature_max     0.723409
+                Hub_temperature_min       Rotor_bearing_temperature_max     0.723348
+                    Hub_temperature           Rotor_bearing_temperature     0.723197
+          Gearbox_inlet_temperature                         Pitch_angle    -0.722862
+Generator_bearing_1_temperature_min       Rotor_bearing_temperature_max     0.722805
+                Hub_temperature_max       Rotor_bearing_temperature_min     0.722613
+                    Hub_temperature       Rotor_bearing_temperature_min     0.722608
+          Gearbox_inlet_temperature                     Pitch_angle_min    -0.721801
+   Gearbox_oil_sump_temperature_max                     Pitch_angle_max    -0.721797
+  Gearbox_bearing_1_temperature_min Generator_bearing_2_temperature_max     0.721376
+Generator_bearing_1_temperature_min           Rotor_bearing_temperature     0.721018
+                Hub_temperature_max           Rotor_bearing_temperature     0.720916
+                Hub_temperature_max       Rotor_bearing_temperature_max     0.719476
+Generator_bearing_1_temperature_max             Nacelle_temperature_min     0.719464
+                    Hub_temperature       Rotor_bearing_temperature_max     0.719452
+   Gearbox_oil_sump_temperature_min                     Pitch_angle_max    -0.718740
+  Gearbox_bearing_1_temperature_max Generator_bearing_2_temperature_max     0.718692
+  Gearbox_bearing_2_temperature_max Generator_bearing_1_temperature_min     0.717761
+  Gearbox_bearing_1_temperature_max       Rotor_bearing_temperature_min     0.716518
+  Gearbox_bearing_1_temperature_min     Generator_bearing_2_temperature     0.716152
+  Gearbox_bearing_1_temperature_max           Rotor_bearing_temperature     0.716141
+  Gearbox_bearing_1_temperature_max       Rotor_bearing_temperature_max     0.715916
+  Gearbox_bearing_2_temperature_max Generator_bearing_2_temperature_max     0.715838
+      Gearbox_bearing_1_temperature           Rotor_bearing_temperature     0.715635
+      Gearbox_bearing_1_temperature Generator_bearing_2_temperature_max     0.715326
+  Gearbox_bearing_1_temperature_min       Rotor_bearing_temperature_min     0.715284
+  Gearbox_bearing_1_temperature_min           Rotor_bearing_temperature     0.714649
+                     Grid_frequency                  Grid_frequency_max     0.714372
+  Gearbox_bearing_1_temperature_min       Rotor_bearing_temperature_max     0.714299
+      Gearbox_bearing_1_temperature       Rotor_bearing_temperature_min     0.713414
+  Gearbox_bearing_1_temperature_min Generator_bearing_1_temperature_min     0.713413
+  Gearbox_bearing_2_temperature_min Generator_bearing_1_temperature_min     0.713017
+      Gearbox_bearing_1_temperature     Generator_bearing_2_temperature     0.712997
+  Gearbox_bearing_2_temperature_min Generator_bearing_2_temperature_max     0.712815
+      Gearbox_inlet_temperature_max                     Pitch_angle_max    -0.712572
+      Gearbox_bearing_1_temperature       Rotor_bearing_temperature_max     0.712569
+  Gearbox_bearing_1_temperature_max     Generator_bearing_2_temperature     0.712526
+      Gearbox_bearing_2_temperature Generator_bearing_1_temperature_min     0.712089
+  Gearbox_bearing_1_temperature_max Generator_bearing_1_temperature_min     0.711938
+      Gearbox_bearing_2_temperature Generator_bearing_2_temperature_max     0.711314
+      Gearbox_inlet_temperature_min       Rotor_bearing_temperature_min     0.711084
+      Gearbox_inlet_temperature_min       Rotor_bearing_temperature_max     0.709786
+  Gearbox_bearing_1_temperature_min Generator_bearing_2_temperature_min     0.709772
+      Gearbox_inlet_temperature_min           Rotor_bearing_temperature     0.709201
+          Gearbox_inlet_temperature                     Pitch_angle_max    -0.708292
+  Gearbox_bearing_2_temperature_max     Generator_bearing_2_temperature     0.708126
+      Gearbox_bearing_1_temperature Generator_bearing_1_temperature_min     0.707149
+      Gearbox_bearing_2_temperature     Generator_bearing_2_temperature     0.706893
+          Gearbox_inlet_temperature             Nacelle_temperature_max     0.706815
+  Gearbox_bearing_1_temperature_max Generator_bearing_2_temperature_min     0.705908
+  Gearbox_bearing_2_temperature_min     Generator_bearing_2_temperature     0.705545
+   Generator_stator_temperature_min                     Pitch_angle_max    -0.704805
+      Gearbox_bearing_1_temperature Generator_bearing_2_temperature_min     0.702946
+  Gearbox_bearing_2_temperature_max Generator_bearing_2_temperature_min     0.702656
+            Absolute_wind_direction                   Nacelle_angle_min     0.702244
+          Absolute_wind_direction_c                   Nacelle_angle_min     0.702235
+      Gearbox_inlet_temperature_max             Nacelle_temperature_max     0.701245
+  Gearbox_bearing_2_temperature_min Generator_bearing_2_temperature_min     0.700636
+            Absolute_wind_direction                   Nacelle_angle_max     0.700534
+      Gearbox_inlet_temperature_min                         Pitch_angle    -0.700524
+          Absolute_wind_direction_c                   Nacelle_angle_max     0.700523
+
+--- SENSOR CORRELATIONS WITH TARGET (ACTIVE POWER) ---
+Rotor_speed_min                        0.740135
+Generator_speed_min                    0.738900
+Generator_converter_speed_min          0.738866
+Rotor_speed                            0.738555
+Generator_speed                        0.737672
+Generator_converter_speed              0.737583
+Rotor_speed_max                        0.683831
+Generator_speed_max                    0.683443
+Generator_converter_speed_max          0.683305
+Gearbox_bearing_2_temperature          0.583740
+Gearbox_bearing_2_temperature_min      0.582992
+Gearbox_bearing_1_temperature          0.572416
+Gearbox_bearing_2_temperature_max      0.571743
+Gearbox_bearing_1_temperature_max      0.568579
+Gearbox_bearing_1_temperature_min      0.563001
+Generator_stator_temperature_max       0.389392
+Generator_stator_temperature           0.386202
+Generator_stator_temperature_min       0.376007
+Generator_stator_temperature_std       0.349321
+Gearbox_oil_sump_temperature_max       0.300997
+Gearbox_oil_sump_temperature           0.294676
+Gearbox_oil_sump_temperature_min       0.284758
+Gearbox_inlet_temperature_std          0.275074
+Generator_bearing_1_temperature_std    0.265220
+Rotor_bearing_temperature              0.264465
+Rotor_bearing_temperature_min          0.263185
+Rotor_bearing_temperature_max          0.262311
+Gearbox_oil_sump_temperature_std       0.251556
+Gearbox_bearing_1_temperature_std      0.207302
+Grid_voltage_max                       0.197230
+Grid_voltage                           0.179883
+Grid_voltage_min                       0.157589
+Nacelle_temperature_std                0.130726
+Grid_voltage_std                       0.104703
+Gearbox_inlet_temperature_max          0.095211
+Gearbox_inlet_temperature              0.057743
+Generator_bearing_2_temperature_max    0.051594
+Generator_bearing_2_temperature        0.048579
+Generator_bearing_2_temperature_min    0.048475
+Gearbox_bearing_2_temperature_std      0.030754
+Grid_frequency_min                     0.024630
+Generator_bearing_1_temperature_max    0.024071
+Generator_bearing_2_temperature_std    0.023691
+Grid_frequency_max                     0.021953
+Gearbox_inlet_temperature_min          0.021857
+Grid_frequency                         0.020813
+Absolute_wind_direction                0.013697
+Absolute_wind_direction_c              0.013688
+Hub_temperature_std                    0.012712
+Nacelle_angle_c                        0.006762
+Nacelle_angle                          0.006747
+Generator_bearing_1_temperature        0.004325
+Rotor_bearing_temperature_std         -0.000144
+Nacelle_angle_max                     -0.007044
+Nacelle_angle_min                     -0.010274
+Grid_frequency_std                    -0.010339
+Generator_bearing_1_temperature_min   -0.011312
+Nacelle_angle_std                     -0.021605
+Rotor_speed_std                       -0.036433
+Generator_converter_speed_std         -0.037281
+Generator_speed_std                   -0.038669
+Pitch_angle_std                       -0.048372
+Hub_temperature_max                   -0.096124
+Hub_temperature                       -0.097416
+Hub_temperature_min                   -0.097445
+Outdoor_temperature_std               -0.120934
+Outdoor_temperature_min               -0.146915
+Outdoor_temperature_max               -0.149707
+Outdoor_temperature                   -0.149828
+Nacelle_temperature_max               -0.252234
+Nacelle_temperature                   -0.273659
+Nacelle_temperature_min               -0.282678
+Pitch_angle_max                       -0.358874
+Pitch_angle_min                       -0.375808
+Pitch_angle                           -0.384454
