@@ -1,6 +1,7 @@
 notebooks/dlengie_final.ipynb
 reports/wind-turbine-analysis.pdf
 reports/dlengie_final.pdf
+verify_config.py
 
 .DS_Store
 Thumbs.db
@@ -10,6 +11,7 @@ __pycache__/
 *$py.class
 *.so
 .Python
+*.log
 
 .ipynb_checkpoints/
 */.ipynb_checkpoints/
