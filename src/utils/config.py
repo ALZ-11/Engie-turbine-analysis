@@ -25,6 +25,7 @@ class SchemaConfig:
 class FeatureSelectionConfig:
     mi_sample_size: int
     mi_threshold: float
+    spearman_threshold: float
 
 @dataclass(frozen=True)
 class PipelineConfig:
@@ -49,7 +50,7 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
     data_dir_str = env_data_dir if env_data_dir else raw_config["paths"]["data_dir"]
     data_dir = Path(data_dir_str)
     
-    # construct PathConfig
+    # Construct PathConfig
     paths_dict = raw_config["paths"]
     paths_config = PathConfig(
         data_dir=data_dir,
@@ -71,7 +72,8 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
     fs_dict = raw_config["feature_selection"]
     fs_config = FeatureSelectionConfig(
         mi_sample_size=int(fs_dict["mi_sample_size"]),
-        mi_threshold=float(fs_dict["mi_threshold"])
+        mi_threshold=float(fs_dict["mi_threshold"]),
+        spearman_threshold=float(fs_dict["spearman_threshold"])
     )
     
     return PipelineConfig(paths=paths_config, schema=schema_config, feature_selection=fs_config)

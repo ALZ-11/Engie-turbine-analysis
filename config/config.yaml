@@ -16,3 +16,5 @@ feature_selection:
   mi_sample_size: 50000
   # features contributing less than 0.005 bits of information will be dropped
   mi_threshold: 0.005
+  # threshold where features with monotonic correlation > 90% are grouped and pruned
+  spearman_threshold: 0.90
