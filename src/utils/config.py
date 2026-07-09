@@ -22,9 +22,15 @@ class SchemaConfig:
     turbine_col: str
 
 @dataclass(frozen=True)
+class FeatureSelectionConfig:
+    mi_sample_size: int
+    mi_threshold: float
+
+@dataclass(frozen=True)
 class PipelineConfig:
     paths: PathConfig
     schema: SchemaConfig
+    feature_selection: FeatureSelectionConfig
 
 
 def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
@@ -61,4 +67,11 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
         turbine_col=schema_dict["turbine_col"]
     )
     
-    return PipelineConfig(paths=paths_config, schema=schema_config)
+    # construct FeatureSelectionConfig
+    fs_dict = raw_config["feature_selection"]
+    fs_config = FeatureSelectionConfig(
+        mi_sample_size=int(fs_dict["mi_sample_size"]),
+        mi_threshold=float(fs_dict["mi_threshold"])
+    )
+    
+    return PipelineConfig(paths=paths_config, schema=schema_config, feature_selection=fs_config)

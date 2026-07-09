@@ -10,3 +10,9 @@ schema:
   target_col: "TARGET"
   time_col: "Date_time"
   turbine_col: "MAC_CODE"
+
+feature_selection:
+  # size of randomized subset to compute MI rapidly
+  mi_sample_size: 50000
+  # features contributing less than 0.005 bits of information will be dropped
+  mi_threshold: 0.005
