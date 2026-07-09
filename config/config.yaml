@@ -1,0 +1,12 @@
+paths:
+  # root dir for SCADA files (can be overridden in .env for Kaggle/Colab)
+  data_dir: "data"
+  raw_x_file: "engie_X.csv"
+  raw_y_file: "engie_Y.csv"
+  reports_dir: "reports"
+
+schema:
+  id_col: "ID"
+  target_col: "TARGET"
+  time_col: "Date_time"
+  turbine_col: "MAC_CODE"
