@@ -21,6 +21,7 @@ __pycache__/
 *.sublime-project
 *.sublime-workspace
 
+.env
 .venv/
 venv/
 env/
@@ -29,3 +30,6 @@ build/
 dist/
 
 /data/
+
+models/*.keras
+models/*.joblib
