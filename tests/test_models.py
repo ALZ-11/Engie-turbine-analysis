@@ -1,10 +1,13 @@
 # tests/test_models.py
 import pytest
+import yaml
+from pathlib import Path
 import numpy as np
 from src.utils.config import load_config
 from src.features.preprocessing import TurbineTargetScaler
 from src.models.classical import train_linear_regression, train_xgboost, detect_xgb_device
 from src.models.deep_learning import train_deep_neural_network, train_recurrent_lstm
+from src.models.tuning import tune_xgboost_hyperparameters
 
 @pytest.fixture
 def mock_model_config():
@@ -85,3 +88,42 @@ def test_recurrent_lstm_training_handshake(mock_model_config):
     assert "metrics" in lstm_results
     assert "model" in lstm_results
     assert len(lstm_results["predictions"]) == 10
+
+
+def test_xgboost_hyperparameter_tuning_and_serialization(mock_model_config):
+    """
+    verifies that the tuning engine runs correctly, outputs a valid YAML parameter file,
+    and tears down afterward.
+    """
+    X_train = np.random.normal(0, 1, (30, 10))
+    y_train = np.random.normal(100, 50, 30)
+    
+    tuned_params_path = Path("models/best_xgb_params.yaml")
+    
+    # backup existing parameters if they exist to prevent tests from overwriting user progress
+    backup_data = None
+    if tuned_params_path.exists():
+        with open(tuned_params_path, "r") as f:
+            backup_data = yaml.safe_load(f)
+            
+    try:
+        # run optimization (1 iteration)
+        best_params = tune_xgboost_hyperparameters(X_train, y_train, mock_model_config, n_iter=1)
+        
+        # verify the file was written and is syntactically valid
+        assert tuned_params_path.exists()
+        with open(tuned_params_path, "r") as f:
+            loaded_params = yaml.safe_load(f)
+            
+        assert "max_depth" in loaded_params
+        assert "learning_rate" in loaded_params
+        assert loaded_params["max_depth"] == best_params["max_depth"]
+        
+    finally:
+        # clean up and restore state
+        if tuned_params_path.exists():
+            tuned_params_path.unlink()
+        if backup_data is not None:
+            # restore user's tuned parameters
+            with open(tuned_params_path, "w") as f:
+                yaml.safe_dump(backup_data, f)
