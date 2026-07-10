@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+from sklearn.base import BaseEstimator, TransformerMixin
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
@@ -9,6 +10,24 @@ from src.utils.config import PipelineConfig
 from src.utils.logger import setup_logger
 
 logger = setup_logger()
+
+class ColumnDropper(BaseEstimator, TransformerMixin):
+    """
+    custom Scikit-Learn transformer that drops a list of 
+    specified columns from a Pandas DataFrame during pipeline runs.
+    """
+    def __init__(self, columns_to_drop: list[str]):
+        self.columns_to_drop = columns_to_drop
+
+    def fit(self, X: pd.DataFrame, y=None) -> "ColumnDropper":
+        # (fitting a column dropper is a stateless operation)
+        return self
+
+    def transform(self, X: pd.DataFrame) -> pd.DataFrame:
+        # drop only the columns present in input DataFrame
+        existing_cols = [col for col in self.columns_to_drop if col in X.columns]
+        return X.drop(columns=existing_cols)
+
 
 class TurbineTargetScaler:
     """
@@ -66,7 +85,7 @@ def build_column_transformer(numerical_cols: list[str], categorical_cols: list[s
             ("num", num_pipeline, numerical_cols),
             ("cat", cat_pipeline, categorical_cols)
         ],
-        remainder="drop" # drop any unselected/metadata columns explicitly
+        remainder="drop" # drop unselected/metadata columns
     )
     
     return preprocessor
