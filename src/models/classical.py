@@ -1,4 +1,7 @@
+import os
 import time
+import yaml
+from pathlib import Path
 import numpy as np
 import xgboost as xgb
 from sklearn.linear_model import LinearRegression
@@ -71,19 +74,43 @@ def train_random_forest(
 def train_xgboost(
     X_train: np.ndarray, y_train: np.ndarray, X_test: np.ndarray, y_test: np.ndarray, config: PipelineConfig
 ) -> dict:
-    """trains and scores hardware-aware XGBoost regressor."""
+    """
+    trains and scores an XGBoost Regressor.
+    loads optimized hyperparameters from disk if they exist;
+    falls back to default configurations otherwise.
+    """
     params = config.model_parameters
     device = detect_xgb_device()
     
-    logger.info(f"training XGBoost on {device.upper()} (n_estimators={params.xgb_n_estimators}, lr={params.xgb_learning_rate})...")
+    # define fallback parameters (default)
+    model_kwargs = {
+        "n_estimators": params.xgb_n_estimators,
+        "learning_rate": params.xgb_learning_rate,
+        "device": device,
+        "random_state": 42,
+        "n_jobs": -1
+    }
     
-    model = xgb.XGBRegressor(
-        n_estimators=params.xgb_n_estimators,
-        learning_rate=params.xgb_learning_rate,
-        device=device,
-        random_state=42,
-        n_jobs=-1
-    )
+    # attempt to load tuned hyperparameters from disk
+    tuned_params_path = Path("models/best_xgb_params.yaml")
+    if tuned_params_path.exists():
+        try:
+            with open(tuned_params_path, "r") as f:
+                tuned_kwargs = yaml.safe_load(f)
+            # inject device and safety arguments into loaded kwargs
+            tuned_kwargs["device"] = device
+            tuned_kwargs["random_state"] = 42
+            tuned_kwargs["n_jobs"] = -1
+            
+            model_kwargs = tuned_kwargs
+            logger.info(f"tuned hyperparameters successfully loaded from: '{tuned_params_path}'")
+        except Exception as e:
+            logger.warning(f"failed to parse tuned parameters, falling back to config defaults. Error: {e}")
+    else:
+        logger.info("no tuned parameters found on disk, proceeding with configuration defaults.")
+        
+    logger.info(f"training XGBoost model...")
+    model = xgb.XGBRegressor(**model_kwargs)
     
     start_time = time.time()
     model.fit(X_train, y_train)
