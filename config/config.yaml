@@ -28,3 +28,9 @@ sequence_parameters:
 model_parameters:
   # minimum physical power consumption under auxiliary standby mode (kW)
   standby_min_kw: -19.48
+  # RF parameters (reduce n_estimators or set depth to speed up CPU runs)
+  rf_n_estimators: 100 # change to a lower value (e.g., 10) for faster CPU runs (testing, ...)
+  rf_max_depth: null # map to None
+  # XGBoost parameters
+  xgb_n_estimators: 100
+  xgb_learning_rate: 0.1

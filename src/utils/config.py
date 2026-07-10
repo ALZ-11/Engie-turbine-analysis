@@ -35,6 +35,10 @@ class SequenceConfig:
 @dataclass(frozen=True)
 class ModelParametersConfig:
     standby_min_kw: float
+    rf_n_estimators: int
+    rf_max_depth: int | None
+    xgb_n_estimators: int
+    xgb_learning_rate: float
 
 @dataclass(frozen=True)
 class PipelineConfig:
@@ -96,8 +100,15 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
     
     # construct ModelParametersConfig
     mp_dict = raw_config["model_parameters"]
+    max_depth_val = mp_dict["rf_max_depth"]
+    rf_max_depth = int(max_depth_val) if max_depth_val is not None else None
+    
     mp_config = ModelParametersConfig(
-        standby_min_kw=float(mp_dict["standby_min_kw"])
+        standby_min_kw=float(mp_dict["standby_min_kw"]),
+        rf_n_estimators=int(mp_dict["rf_n_estimators"]),
+        rf_max_depth=rf_max_depth,
+        xgb_n_estimators=int(mp_dict["xgb_n_estimators"]),
+        xgb_learning_rate=float(mp_dict["xgb_learning_rate"])
     )
     
     return PipelineConfig(
