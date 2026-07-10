@@ -24,3 +24,7 @@ sequence_parameters:
   lookback_steps: 6
   # expected step difference in Date_time values
   step_size: 1.0
+
+model_parameters:
+  # minimum physical power consumption under auxiliary standby mode (kW)
+  standby_min_kw: -19.48

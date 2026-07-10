@@ -33,16 +33,21 @@ class SequenceConfig:
     step_size: float
 
 @dataclass(frozen=True)
+class ModelParametersConfig:
+    standby_min_kw: float
+
+@dataclass(frozen=True)
 class PipelineConfig:
     paths: PathConfig
     schema: SchemaConfig
     feature_selection: FeatureSelectionConfig
     sequence_parameters: SequenceConfig
+    model_parameters: ModelParametersConfig
 
 
 def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
     """
-    Parses config.yaml and env variables to construct a PipelineConfig object.
+    parses config.yaml and env variables to construct PipelineConfig object.
     """
     path_ref = Path(config_path)
     if not path_ref.exists():
@@ -89,9 +94,16 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
         step_size=float(seq_dict["step_size"])
     )
     
+    # construct ModelParametersConfig
+    mp_dict = raw_config["model_parameters"]
+    mp_config = ModelParametersConfig(
+        standby_min_kw=float(mp_dict["standby_min_kw"])
+    )
+    
     return PipelineConfig(
         paths=paths_config,
         schema=schema_config,
         feature_selection=fs_config,
-        sequence_parameters=seq_config
+        sequence_parameters=seq_config,
+        model_parameters=mp_config
     )
