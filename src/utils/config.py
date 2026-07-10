@@ -28,10 +28,16 @@ class FeatureSelectionConfig:
     spearman_threshold: float
 
 @dataclass(frozen=True)
+class SequenceConfig:
+    lookback_steps: int
+    step_size: float
+
+@dataclass(frozen=True)
 class PipelineConfig:
     paths: PathConfig
     schema: SchemaConfig
     feature_selection: FeatureSelectionConfig
+    sequence_parameters: SequenceConfig
 
 
 def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
@@ -50,7 +56,7 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
     data_dir_str = env_data_dir if env_data_dir else raw_config["paths"]["data_dir"]
     data_dir = Path(data_dir_str)
     
-    # Construct PathConfig
+    # construct PathConfig
     paths_dict = raw_config["paths"]
     paths_config = PathConfig(
         data_dir=data_dir,
@@ -76,4 +82,16 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
         spearman_threshold=float(fs_dict["spearman_threshold"])
     )
     
-    return PipelineConfig(paths=paths_config, schema=schema_config, feature_selection=fs_config)
+    # construct SequenceConfig
+    seq_dict = raw_config["sequence_parameters"]
+    seq_config = SequenceConfig(
+        lookback_steps=int(seq_dict["lookback_steps"]),
+        step_size=float(seq_dict["step_size"])
+    )
+    
+    return PipelineConfig(
+        paths=paths_config,
+        schema=schema_config,
+        feature_selection=fs_config,
+        sequence_parameters=seq_config
+    )

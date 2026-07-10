@@ -18,3 +18,9 @@ feature_selection:
   mi_threshold: 0.005
   # threshold where features with monotonic correlation > 90% are grouped and pruned
   spearman_threshold: 0.90
+
+sequence_parameters:
+  # historical window of 6 lookback steps (representing 1 hour at 10-minute intervals)
+  lookback_steps: 6
+  # expected step difference in Date_time values
+  step_size: 1.0
