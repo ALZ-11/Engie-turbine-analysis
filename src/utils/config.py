@@ -39,6 +39,10 @@ class ModelParametersConfig:
     rf_max_depth: int | None
     xgb_n_estimators: int
     xgb_learning_rate: float
+    dl_epochs: int
+    dl_batch_size: int
+    dl_early_stopping_patience: int
+    dl_learning_rate: float
 
 @dataclass(frozen=True)
 class PipelineConfig:
@@ -108,7 +112,11 @@ def load_config(config_path: str = "config/config.yaml") -> PipelineConfig:
         rf_n_estimators=int(mp_dict["rf_n_estimators"]),
         rf_max_depth=rf_max_depth,
         xgb_n_estimators=int(mp_dict["xgb_n_estimators"]),
-        xgb_learning_rate=float(mp_dict["xgb_learning_rate"])
+        xgb_learning_rate=float(mp_dict["xgb_learning_rate"]),
+        dl_epochs=int(mp_dict["dl_epochs"]),
+        dl_batch_size=int(mp_dict["dl_batch_size"]),
+        dl_early_stopping_patience=int(mp_dict["dl_early_stopping_patience"]),
+        dl_learning_rate=float(mp_dict["dl_learning_rate"])
     )
     
     return PipelineConfig(

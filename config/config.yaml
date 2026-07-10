@@ -28,9 +28,14 @@ sequence_parameters:
 model_parameters:
   # minimum physical power consumption under auxiliary standby mode (kW)
   standby_min_kw: -19.48
-  # RF parameters (reduce n_estimators or set depth to speed up CPU runs)
-  rf_n_estimators: 100 # change to a lower value (e.g., 10) for faster CPU runs (testing, ...)
+  # RF parameters (100 is default, reduce n_estimators or set depth to speed up CPU runs)
+  rf_n_estimators: 10 # change back to 100 for production runs
   rf_max_depth: null # map to None
   # XGBoost parameters
   xgb_n_estimators: 100
   xgb_learning_rate: 0.1
+  # DL parameters
+  dl_epochs: 30 # increase to 50 or 100 for production runs
+  dl_batch_size: 1024
+  dl_early_stopping_patience: 5
+  dl_learning_rate: 0.001
